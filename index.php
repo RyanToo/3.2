@@ -67,23 +67,23 @@ $Iphone = new SmartPhone ("Iphone ", "10", "100000  ", "Сделан в США")
 $Iphone -> getFullDescription();
 echo "</p>";
 
-class Spinner extends Product 
+class Chehol extends Product 
 {
     public $type;		
     use Construct;
 }
 
 echo "<p>";
-$chehol = new Spinner("Оригинальнный чехол для телефона с личным фото ", "книжка ", "1500 ", "Сделано в России" );
+$chehol = new Chehol ("Оригинальнный чехол для телефона с личным фото ", "книжка ", "1500 ", "Сделано в России" );
 $chehol-> getFullDescription();
 echo "</p>";
 
 echo "<p>";
-$chehol2 = new Spinner ("Чехол для телефона  ", "бампер", "100 ", "Сделан в Китае");
+$chehol2 = new Chehol ("Чехол для телефона  ", "бампер", "100 ", "Сделан в Китае");
 $chehol2 -> getFullDescription();
 echo "</p>";
 
-class Cement extends Product 
+class pomidor extends Product 
 {
     public $weight;
 	
@@ -94,11 +94,11 @@ class Cement extends Product
     }	
 }
 echo "<p>";
-$pomi1 = new Cement("помидоры ", "10 кг ", "890руб.", "Турция" );
+$pomi1 = new pomidor ("помидоры ", "10 кг ", "890руб.", "Турция" );
 $pomi1 -> getFullDescription();
 echo "</p>";
 echo "<p>";
-$pomi2 = new Cement ("помидоры", "5 кг ", "200руб.", "Сделан во РФ");
+$pomi2 = new pomidor ("помидоры", "5 кг ", "200руб.", "Сделан во РФ");
 $pomi2 -> getFullDescription();
 echo "</p>";
 
@@ -110,5 +110,4 @@ echo "</p>";
 
 Отличие интерфейсов от абстрактных классов в том, что в интерфейсах нельзя писать реализацию методов, а так же в интерфейсах нельзя указывать поля.<br />
    Классы могут наследовать сколько угодно интерфейсов, а абстрактный первый класс.
-
  
